@@ -19,7 +19,14 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <Box sx={{ backgroundColor: "#2E3641", color: "#fff", py: 6 }}>
+    <Box
+      sx={{
+        backgroundColor: "#2E3641",
+        color: "#fff",
+        py: 6,
+        paddingBottom: "65px",
+      }}
+    >
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           {/* Identidade Visual */}
