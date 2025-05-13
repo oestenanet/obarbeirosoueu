@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Typography, Box, Grid, Paper, Button } from "@mui/material";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -76,6 +77,11 @@ const ContactPage: React.FC = () => {
               </Box>
 
               <Button
+                component={Link}
+                to={
+                  "https://api.whatsapp.com/send/?phone=%2B351916581046&text&type=phone_number&app_absent=0"
+                }
+                target="_blank"
                 variant="contained"
                 color="primary"
                 sx={{

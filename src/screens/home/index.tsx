@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           }}
         >
           <source
-            src="src\assets\AQNYjHvOQSkZ9tTCVZnSubQFwmC25Ow_bsX-XPnC9HuAAX_oPZsyAI7edk6xK8BF65qxy6Os7SLERrKIm6lG5J_-2tB4D_Y13S-wElo.mp4"
+            src="/AQNYjHvOQSkZ9tTCVZnSubQFwmC25Ow_bsX-XPnC9HuAAX_oPZsyAI7edk6xK8BF65qxy6Os7SLERrKIm6lG5J_-2tB4D_Y13S-wElo.mp4"
             type="video/mp4"
           />
         </video>
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
                 }}
               >
                 <Avatar
-                  src="src\assets\473714414_17944826120943241_2585765885343530930_n.jpeg"
+                  src="/473714414_17944826120943241_2585765885343530930_n.jpeg"
                   sx={{ width: 120, height: 120, mb: 2 }}
                 />
                 <Typography variant="h6" sx={{ fontWeight: "bold" }}>
