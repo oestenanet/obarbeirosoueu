@@ -4,6 +4,20 @@ import { Box, Typography, Container, Grid, IconButton } from "@mui/material";
 import { Instagram, Facebook, WhatsApp } from "@mui/icons-material";
 
 const Footer: React.FC = () => {
+  // Função para verificar se o dispositivo é móvel
+  const isMobile = window.innerWidth <= 768; // Considerando 768px como limite para mobile
+
+  // Determina o link para os créditos com base no dispositivo
+  const getCreditsLink = () => {
+    if (isMobile) {
+      // Para dispositivos móveis, redireciona para a chamada telefônica
+      return `tel:+351916581046`;
+    } else {
+      // Para desktop ou tablet, redireciona para o e-mail
+      return `mailto:oestenanet@gmail.com`;
+    }
+  };
+
   return (
     <Box sx={{ backgroundColor: "#2E3641", color: "#fff", py: 6 }}>
       <Container maxWidth="lg">
@@ -13,7 +27,7 @@ const Footer: React.FC = () => {
             <Typography
               variant="h5"
               sx={{
-                fontFamily: "'Lobster', cursive",
+                fontFamily: "Alfa Slab One, serif",
                 fontWeight: "bold",
                 letterSpacing: 1,
                 mb: 2,
@@ -85,7 +99,13 @@ const Footer: React.FC = () => {
         {/* Créditos */}
         <Box sx={{ textAlign: "center", mt: 4, opacity: 0.6 }}>
           <Typography variant="body2">
-            © {new Date().getFullYear()} Website criado por Etronic Digitals.
+            © {new Date().getFullYear()} Website criado por{" "}
+            <a
+              href={getCreditsLink()}
+              style={{ color: "#fff", textDecoration: "underline" }}
+            >
+              Etronic Digitals. {"+351 932 141 109"}
+            </a>
           </Typography>
         </Box>
       </Container>

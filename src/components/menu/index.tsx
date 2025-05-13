@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           variant="h5"
           sx={{
             flexGrow: 1,
-            fontFamily: "'Lobster', cursive",
+            fontFamily: "Alfa Slab One, serif",
             fontWeight: "bold",
             color: "white",
             letterSpacing: "2px",

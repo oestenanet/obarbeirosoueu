@@ -46,7 +46,7 @@ const Marcacoes: React.FC = () => {
           <Paper
             elevation={10}
             sx={{
-              width: "90%",
+              width: "100%",
               mx: "auto",
               borderRadius: 3,
               height: "80vh",
